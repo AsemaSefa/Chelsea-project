@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:wght@200;400;500;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="Logo.png" type="image/x-icon" />
+  <title>Chelse FC Fan Club | Home</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="navbar-container container">
+        <input type="checkbox" name="" id="" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <ul class="menu-items">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Category</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Testimonial</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="d-flex align-center">
+          <img src="./Logo.png" alt="logo" width="50" />
+          <h1 class="logo">Chelsea FC | Fan Club</h1>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero d-flex align-center">
+      <div>
+        <h2>Welcome To Our Chelsea Fan Club Website</h2>
+        <p>Home of real fans and football enhtusiasts!</p>
+        <a href="" class="call-to-action"><i class="bx bx-cart"></i> Visit our Shop</a>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <h2 class="display-6 mt-3 mb-0">Gallery</h2>
+      <div class="header d-flex flex-column align-items-center">
+
+
+        <!-- Images used to open the lightbox -->
+        <div class="row">
+          <div class="column">
+            <img src="https://i.pinimg.com/564x/61/d4/f4/61d4f41c27ae2a97044ee24c563426fa.jpg"
+              onclick="openModal();currentSlide(1)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="https://i.pinimg.com/564x/8f/ce/43/8fce435c5776a9faa9a4e129e96322e0.jpg"
+              onclick="openModal();currentSlide(2)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="./Chelsea 💙.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="https://i.pinimg.com/236x/a1/28/40/a1284077ebc20c7a4dc5956858052862.jpg"
+              onclick="openModal();currentSlide(4)" class="hover-shadow">
+          </div>
+        </div>
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+
+            <div class="mySlides">
+              <div class="numbertext">1 / 4</div>
+              <img src="https://i.pinimg.com/564x/61/d4/f4/61d4f41c27ae2a97044ee24c563426fa.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 4</div>
+              <img src="https://i.pinimg.com/564x/8f/ce/43/8fce435c5776a9faa9a4e129e96322e0.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 4</div>
+              <img src="./Chelsea 💙.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 4</div>
+              <img src="https://i.pinimg.com/236x/a1/28/40/a1284077ebc20c7a4dc5956858052862.jpg" style="width:100%">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail image controls -->
+            <div class="column">
+              <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Nature">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Snow">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
