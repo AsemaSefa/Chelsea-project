@@ -1,5 +1,6 @@
 :root {
   --main-color: rgb(3, 70, 148);
+  
 }
 
 *,
@@ -20,7 +21,6 @@ body {
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  
 }
 
 .navbar input[type="checkbox"],
@@ -99,13 +99,16 @@ h1 {
   background-blend-mode: multiply;
   height: 100vh;
   color: #fff;
-  text-shadow: 0.5px 0.5px 3px black;
+  text-shadow: 0.8px 0.8px 3px black;
   justify-content: center;
   font-size: 2em;
   text-align: center;
   line-height: 2;
+  
 }
-
+#newbgimage{
+  background-image: url('./images/chelsea10.jpg');
+}
 .call-to-action {
   background-color: rgb(238, 36, 44);
   padding: 10px 20px;
@@ -113,29 +116,27 @@ h1 {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
-
 }
-.ctr h2{
+.ctr h2 {
   text-align: center;
   color: var(--main-color);
-  
 }
-.gallery a{
+.gallery a {
   text-decoration: none;
   text-align: center;
   display: block;
-  
 }
-.gallery{
-  width: 90;
+.gallery {
+  width: 90%;
   margin: auto;
-  
 }
 .row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  
   gap: 10px;
 }
+
 .row > .column {
   padding: 0.8px;
 }
@@ -145,21 +146,13 @@ h1 {
   min-height: 60%;
   max-height: 80%;
 }
-.thumbnail{
+.thumbnail {
   grid-template-columns: repeat(10, 1fr);
 }
 
-/* .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Create four equal columns that floats next to eachother 
-  .column {
-    float: left;
-    width: 25%;
-  } */
+.sbody{
+  padding: 20px 10px;
+}
 
 /* The Modal (background) */
 .modal {
@@ -169,6 +162,7 @@ h1 {
   padding-top: 100px;
   left: 0;
   top: 0;
+  
   width: 100%;
   height: 100%;
   overflow: auto;
@@ -271,82 +265,158 @@ img.hover-shadow {
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.about{
+.about {
   display: grid;
   grid-template-columns: 1fr 5fr;
 }
-.about > aside{
-background-color: var(--main-color);
-color: whitesmoke;
-padding: 20px;
-text-align: center;
-line-height: 2;
+.about > aside {
+  background-color: var(--main-color);
+  color: whitesmoke;
+  padding: 20px;
+  text-align: center;
+  line-height: 2;
+  height: 50vh;
+  
 }
-.about > aside > ul{
+.search{
+  margin-top:80px;
+  text-align: center;
+  
+}
+.search> input{
+  border: 1.5px solid black;
+  width: 60%;
+  padding: 5px 10px;
+  border-radius: 4px;
+  
+}
+.about > aside > ul {
   list-style-type: none;
 }
-.about > aside > ul> li a{
+.about > aside > ul > li a {
   text-decoration: none;
   color: whitesmoke;
   display: inline-block;
   padding: 10px;
   border-bottom: 1px solid white;
 }
-.main{
+.main {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.5;
   text-align: justify;
-  height: 50vh;
+  min-height: 90vh;
   overflow-y: scroll;
 }
-.main section{
+.main section {
   width: 90%;
   margin: auto;
   display: flow-root;
+  
 }
-.fblock{
+.fblock {
   width: 20vw;
   height: 20vw;
   padding: 1rem;
 }
-.fblock img{
+.fblock img {
   display: inline-block;
   width: 90%;
   height: 80%;
-  border-radius: 2.5px;
+  border-radius: 1.5px;
 }
-.right{
+.right {
   float: right;
   margin-left: 1rem;
-  
 }
-.left{
+.left {
   float: left;
   margin-right: 1rem;
-  
 }
-.fblock figcaption{
+.fblock figcaption {
   white-space: nowrap;
-  
 }
-.sbody{
+.sbody {
   min-height: 40vh;
 }
-footer{
+footer {
   background-color: var(--main-color);
   color: whitesmoke;
   text-align: center;
-  height:20vw;
+  height: 20vw;
   padding-top: 20px;
   line-height: 1.5;
-
+  border-top:2px white solid ;
 }
-footer a{
+footer a {
   color: whitesmoke;
 }
-footer a:hover,footer a:focus{
+footer a:hover,
+footer a:focus {
   color: aqua;
+}
+.contact {
+  min-height: 50vh;
+  background-color: #e9eaf0;
+}
+.contact h2{
+  text-align: center;
+  color: whitesmoke;
+  }
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  height: 90%;
+}
+.auth {
+  background-color: rgba(6, 107, 208, 0.126);
+  border-radius: 8px;
+  padding: 20px;
+  height: fit-content;
+  width: fit-content;
+  
+}
+.auth div {
+  width: 80%;
+  padding: 10px;
+}
+.auth label {
+  display: block;
+}
+.auth input
+.auth textarea{
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  width: 100%;
+  margin: auto;
+}
+.auth input[type="submit"]{
+  display: block;
+  margin-top: 15px;
+}
+
+.contact img{
+  position: relative;
+  filter: drop-shadow(20px 20px 8px);
+  animation: myanimi 5s;
+  animation-timing-function: ease-in-out;
+  height: 70%;
+}
+
+@keyframes myanimi {
+  0%{
+    left: -10000px;
+  }
+  50%{
+    left: 13px;
+  }
+  100%{
+    left: 30px;
+  }
+  
 }
 @media (max-width: 768px) {
   .navbar {
@@ -460,4 +530,5 @@ footer a:hover,footer a:focus{
   .navbar-container input[type="checkbox"]:checked ~ .logo {
     display: none;
   }
+
 }
